@@ -1,3 +1,4 @@
+import Button from '@/components/Button';
 import ImageViewer from '@/components/ImageViewer';
 import { StyleSheet, View } from "react-native";
 
@@ -9,18 +10,30 @@ export default function Index() {
       <View style={styles.imageContainer}>
         <ImageViewer imageSource={PlaceholderImage}/>
       </View>
+      <View style={styles.footerContainer}>
+         <Button label='Choose a photo' theme='primary'/>
+         <Button label='Use this photo'/>
+      </View>
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#25292e',
-    justifyContent: "center",
     alignItems: 'center',
+    flexDirection: "column",
   },
   imageContainer: {
-    flex: 1,
+    paddingTop: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  footerContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 8,
   }
-})
+});
