@@ -2,6 +2,9 @@
 
 Simple React Native app built with Expo. Pick an image and add emoji stickers on top.
 
+https://github.com/user-attachments/assets/ad57514f-a824-4bbc-9e11-e326663b5b22
+
+
 ## Quick start
 
 1. Install dependencies:
